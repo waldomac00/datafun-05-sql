@@ -8,7 +8,7 @@ import pathlib
 import pandas as pd
 
 # Define paths using joinpath
-db_file_path = pathlib.Path("project.db")
+db_file_path = pathlib.Path("data").joinpath("project.db.sqlite3")
 sql_file_path = pathlib.Path("sql_create").joinpath("02_create_tables.sql")
 author_data_path = pathlib.Path("data").joinpath("authors.csv")
 book_data_path = pathlib.Path("data").joinpath("books.csv")
